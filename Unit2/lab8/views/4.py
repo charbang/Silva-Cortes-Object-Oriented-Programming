@@ -1,3 +1,5 @@
+from tkinter import ttk
+
 class RegisterView:
 
     def __init__(self, root):
@@ -23,7 +25,7 @@ class RegisterView:
 
         # PERSONALIZAR 4:
         # Cambia el título, la fuente y sus colores.
-        self.titulo = tk.Label(
+        self.titulo = ttk.Label(
             self.ventana,
             text="CREAR CUENTA",
             font=("Arial", 19, "bold"),
@@ -34,7 +36,7 @@ class RegisterView:
 
         # PERSONALIZAR 5:
         # Modifica el texto y estilo de las etiquetas.
-        self.lbl_nombre = tk.Label(
+        self.lbl_nombre = ttk.Label(
             self.ventana,
             text="Nombre completo:",
             bg="#E8F8F5",
@@ -42,14 +44,14 @@ class RegisterView:
         )
         self.lbl_nombre.pack()
 
-        self.entry_nombre = tk.Entry(
+        self.entry_nombre = ttk.Entry(
             self.ventana,
             width=35,
             font=("Arial", 10)
         )
         self.entry_nombre.pack(pady=4)
 
-        self.lbl_email = tk.Label(
+        self.lbl_email = ttk.Label(
             self.ventana,
             text="Correo electrónico:",
             bg="#E8F8F5",
@@ -57,14 +59,14 @@ class RegisterView:
         )
         self.lbl_email.pack()
 
-        self.entry_email = tk.Entry(
+        self.entry_email = ttk.Entry(
             self.ventana,
             width=35,
             font=("Arial", 10)
         )
         self.entry_email.pack(pady=4)
 
-        self.lbl_password = tk.Label(
+        self.lbl_password = ttk.Label(
             self.ventana,
             text="Contraseña:",
             bg="#E8F8F5",
@@ -72,7 +74,7 @@ class RegisterView:
         )
         self.lbl_password.pack()
 
-        self.entry_password = tk.Entry(
+        self.entry_password = ttk.Entry(
             self.ventana,
             width=35,
             show="*",
@@ -80,7 +82,7 @@ class RegisterView:
         )
         self.entry_password.pack(pady=4)
 
-        self.lbl_confirmar = tk.Label(
+        self.lbl_confirmar = ttk.Label(
             self.ventana,
             text="Confirmar contraseña:",
             bg="#E8F8F5",
@@ -88,7 +90,7 @@ class RegisterView:
         )
         self.lbl_confirmar.pack()
 
-        self.entry_confirmar = tk.Entry(
+        self.entry_confirmar = ttk.Entry(
             self.ventana,
             width=35,
             show="*",
@@ -98,7 +100,7 @@ class RegisterView:
 
         # PERSONALIZAR 6:
         # Cambia el texto, color, fuente y tamaño del botón.
-        self.btn_guardar = tk.Button(
+        self.btn_guardar = ttk.Button(
             self.ventana,
             text="Registrar usuario",
             width=22,
@@ -110,7 +112,7 @@ class RegisterView:
         self.btn_guardar.pack(pady=12)
 
         # Botón para cancelar el registro.
-        self.btn_cancelar = tk.Button(
+        self.btn_cancelar = ttk.Button(
             self.ventana,
             text="Cancelar",
             width=22,

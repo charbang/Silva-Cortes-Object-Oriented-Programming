@@ -1,28 +1,30 @@
+from tkinter import ttk
+
 class LoginView:
 
     def __init__(self, root):
         self.root = root
 
         # PERSONALIZAR 1:
-        # Cambia el título de la ventana.
-        self.root.title("Sistema de acceso")
+        # Cambia el título de la ventana. done
+        self.root.title("ACCESS SYSTEM")
 
         # PERSONALIZAR 2:
-        # Modifica el ancho y alto de la ventana.
-        self.root.geometry("420x350")
+        # Modifica el ancho y alto de la ventana.done
+        self.root.geometry("520x450")
 
         # PERSONALIZAR 3:
-        # Cambia el color de fondo.
-        self.root.configure(bg="#EAF2F8")
+        # Cambia el color de fondo.done
+        self.root.configure(bg="#828689")
 
         self.root.resizable(False, False)
 
         # PERSONALIZAR 4:
-        # Cambia el texto, la fuente y los colores del título.
-        self.titulo = tk.Label(
+        # Cambia el texto, la fuente y los colores del título.done
+        self.titulo = ttk.Label(
             root,
             text="INICIAR SESIÓN",
-            font=("Arial", 20, "bold"),
+            font=("I", 20, "bold"),
             bg="#EAF2F8",
             fg="#154360"
         )
@@ -30,17 +32,17 @@ class LoginView:
 
         # PERSONALIZAR 5:
         # Modifica el texto y la apariencia de las etiquetas.
-        self.lbl_email = tk.Label(
+        self.lbl_email = ttk.Label(
             root,
-            text="Correo electrónico:",
-            font=("Arial", 11),
-            bg="#EAF2F8"
+            text="Email:",
+            font=("Arial", 14),
+            bg="#B3B9BD"
         )
         self.lbl_email.pack()
 
         # PERSONALIZAR 6:
         # Cambia el ancho, la fuente y otros atributos del campo.
-        self.entry_email = tk.Entry(
+        self.entry_email = ttk.Entry(
             root,
             width=35,
             font=("Arial", 11)
